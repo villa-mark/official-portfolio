@@ -1,0 +1,43 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+body{
+  background-color: #B8B8B8;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+nav{
+  display: flex;
+  position: relative;
+  width: 100vw;
+  height: 12vh;
+  box-shadow: 0 5px 10px hsla(0, 0%, 0%, 0.202);
+}
+
+#menu{
+  display: none;
+}
+
+#nav-link{
+  display: none;
+}
+
+
+main{
+  display: block;
+  height: 100vh;
+}
+
+footer{
+  display: block;
+  height: 20vh;
+  background-color: #2D2B2B;
+  box-shadow: 0 -5px 15px hsla(0, 0%, 0%, 0.408);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}

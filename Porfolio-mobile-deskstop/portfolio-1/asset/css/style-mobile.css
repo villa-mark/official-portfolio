@@ -1,0 +1,37 @@
+/* navigation bar */
+
+#logo{
+  display: inline-block;
+  position: absolute;
+  min-width: 400px;
+  height: 100%;
+  left: 0;
+  background-color: red;
+}
+
+#logo-img{
+  position: absolute;
+  margin: auto;
+}
+
+#navigation{
+  display: inline-block;
+  position: absolute;
+  min-width: 100px;
+  height: 100%;
+  right: 0;
+  background-color: blue;
+}
+
+#menu{
+  display: inline-block;
+  position: absolute;
+  width: 30%;
+}
+
+
+
+
+
+
+
