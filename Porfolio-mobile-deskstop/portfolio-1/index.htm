@@ -10,19 +10,22 @@
 </head>
 
 <body>
-  <div class="wholePage">
 
+  <div class="wholePage">
+    <div id="empty"></div>
     <nav id="navContainer">
       <div class="logo"><img src="asset/img/logo-vill.png" alt="website logo"></div>
+      
       <div class="navigation">
         <img src="asset/img/menu.png" alt="menu icon">
         <ul class="navLink">
-          <li>Home</li>
-          <li>About</li>
-          <li>Projects</li>
-          <li>Contacts</li>
+          <a href="#empty"><li>Home</li></a>
+          <a href="#about"><li>About</li></a>
+          <a href="#project"><li>Projects</li></a>
+          <a href="#footerContainer"><li>Contacts</li></a>
         </ul>
       </div>
+
     </nav>
 
     <main id="mainContainer">
@@ -34,13 +37,23 @@
         <h1>Mark Anthony</h1>
         <h2>Computer Engineer</h2>
         <button class="cvBtn">Download CV</button>
-        <button class="contactBtn">Contacts</button>
+        <button class="contactBtn">Contact Info</button>
       </div>
     </main>
 
-    <div class="about">o</div>
+    <div id="about">
+      <h1>About Me</h1>
+    </div>
 
-    <footer id="footerContainer">o</footer>
+    <div id="project">
+      <h1>Project</h1>
+    </div>
+
+    <footer id="footerContainer">
+      <h1>Contact Informantion</h1>
+    </footer>
+
   </div>
+
 </body>
 </html>
