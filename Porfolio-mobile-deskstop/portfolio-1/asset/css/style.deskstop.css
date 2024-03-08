@@ -30,22 +30,6 @@ nav, #empty{
   color: rgba(64, 63, 63, 0.897);
 }
 
-@media screen and (min-width: 900px){
-  nav, #empty{
-    height: 15vh;
-  }
-  
-  .logo img{
-    width: 40vh;
-  }
-
-  .navLink{
-    font-size: 20px;
-    margin-top: 10vh;
-    gap: 5vw;
-  }
-}
-
 /* MAIN STYLING */
 
 main{
@@ -77,7 +61,7 @@ main{
 }
 
 .info{
-  display: inline-block;
+  display: inline;
   position: relative;
   width: 50vw;
   height: 60vw;
@@ -88,6 +72,7 @@ main{
   margin-top: 13vw;
   font-size: 2.5vw;
   font-weight: 400;
+  color: black;
 }
 
 .info h1{
@@ -121,89 +106,143 @@ main{
   background-color: #2D2B2B;
 }
 
-@media screen and (min-width: 900px){
-  
-main{
-  display: flex;
-  justify-content: center;
-  height: 85vh;
-}
-
-.circleContainer{
-  width: 460px;
-  height: 85vh;
-}
-
-.circle{
-  position: absolute;
-  width: 370px;
-  height: 400px;
-  top: 100px;
-  border-radius: 50%;
-  background-image: linear-gradient(#B8B8B8, #737373);
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.343);
-  overflow: hidden;
-}
-
-.circle img{
-  width: 80%;
-  padding-left: 55px;
-}
-
-.info{
-  width: 460px;
-  height: 85vh;
-  text-align: center;
-}
-
-.info h3{
-  margin-top: 150px;
-  font-size: 25px;
-  font-weight: 400;
-}
-
-.info h1{
-  font-size: 45px;
-  font-weight: 550;
-} 
-
-.info h2{
-  font-size: 25px;
-  margin-bottom: 4vw;
-}
-
-.info button{
-  width: 260px;
-  font-size: 25px;
-  padding: 10px;
-  margin: 10px 30px;
-  border-radius: 20vw;
-}
-
-.cvBtn{
-  border: 3;
-  background-color: #B8B8B8;
-}
-
-.contactBtn{
-  border: none;
-  color: white;
-  background-color: #2D2B2B;
-}
-
-}
+/* ABOUT STYLING */
 
 #about{
-  height: 100vh;
+  height: 50vw;
   background-color: #2D2B2B;
   text-align: center;
 }
 
-#about > h1{
+#about h1, h3{
   color: #B8B8B8;
 
 }
 
+#about > h3{
+  display: inline-block;
+  margin-top: 5vw;
+  font-size: 1vw;
+  font-weight: 400;
+}
+
+#about > h1{
+  font-size: 3vw;
+}
+
+#aboutContentContainer{
+  display: flex;
+  position: relative;
+  width: 80vw;
+  height: 80%;
+  margin: auto;
+}
+
+#infomation-about{
+  width: 50%;
+  height: 100%;
+}
+
+#idcontainer{
+  width: 50%;
+  height: 50%;
+  transform: translateX(50%);
+  background-color: blue;
+  overflow: hidden;
+  border-radius: 20% 0%;
+  margin-top: 10%;
+}
+
+#idcontainer img{
+  position: relative;
+  top: -25%;
+  left: -10%;
+  width: 130%;  
+  filter: grayscale(80%)
+}
+
+#infomation-about p{
+  color: #B8B8B8;
+  font-size: 1.5vw;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-top: 5%;
+}
+
+#aboutEducationSkills{
+  width: 50%;
+  height: 100%;
+  margin: auto;
+}
+
+#aboutEducationSkills > div{
+  position: relative;
+  width: 80%;
+  height: 35%;
+  margin: 10%;
+  border-radius: 5vw 0vw;
+  box-shadow: 3px 3px 10px hsla(0, 0%, 0%, 0.606);
+}
+
+#aboutEducationSkills h2{
+  position: relative;
+  color: #B8B8B8;
+  padding: 3%;
+  font-size: 1.7vw;
+  font-weight: 300;
+  text-decoration: underline;
+}
+
+#aboutEducationSkills p{
+  pointer-events: none;
+}
+
+#diploma{
+  font-size: 1.7vw;
+  font-weight: 550;
+  margin-top: 2%;
+}
+
+#school{
+  margin-top: 3%;
+}
+
+.schoolname{
+  font-size: 1.2vw;
+}
+
+#education{
+  background-color: #424141;
+}
+
+/* SKILLS STYLING */
+
+#skills{
+  background-color: #424141;
+}
+
+#scrollSkill{
+  display: flex;
+  width: 90%;
+  height: 60%;
+  margin-left: 5%;
+  overflow-x: scroll;
+}
+
+#scrollSkill div{
+  display: flex;
+  width: 20%;
+  height: 70%;
+}
+
+#scrollSkill div img{
+  min-width: 100%;
+  object-fit: contain;
+}
+
+
+
+/* PROJECT STYLING */
 #project{
   height: 100vh;
   background-color: #870b0b;
