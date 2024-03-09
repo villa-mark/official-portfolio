@@ -1,4 +1,5 @@
-/* NAVIGATION BAR STYLING */
+@media screen and (max-width: 600px) {
+  /* NAVIGATION BAR STYLING */
 
 nav, #empty{
   height: 20vw;
@@ -373,3 +374,5 @@ main{
   color: #1900ff62;
 }
 
+
+}
