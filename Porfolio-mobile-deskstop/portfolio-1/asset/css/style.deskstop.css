@@ -93,6 +93,7 @@ main{
   padding: 1vw;
   margin: 1vw 3vw;
   border-radius: 20vw;
+  transition: 0.4s;
 }
 
 .cvBtn{
@@ -116,7 +117,6 @@ main{
 
 #about h1, h3{
   color: #B8B8B8;
-
 }
 
 #about > h3{
@@ -158,7 +158,7 @@ main{
   top: -25%;
   left: -10%;
   width: 130%;  
-  filter: grayscale(80%)
+  filter: grayscale(30%)
 }
 
 #infomation-about p{
@@ -244,11 +244,152 @@ main{
 
 /* PROJECT STYLING */
 #project{
-  height: 100vh;
-  background-color: #870b0b;
+  height: 83vw;
+  background-color: #B8B8B8;
 }
 
-#footerContainer{
-  height: 30vh;
+#project h3, h1{
+  pointer-events: none;
+  color: black;
+}
+
+#project h3{
+  font-size: 1vw;
+  margin-top: 5vw;
+}
+
+#project h1{
+  font-size: 4vw;
+  margin-bottom: 50px;
+}
+
+#projectContainer::-webkit-scrollbar{
+  display: none;
+}
+#projectContainer{
+  display: flex;
+  width: 80vw;
+  margin: auto; 
+  padding: 5vw;
+  border-radius: 3vw;
+  background-color: #737373;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.823), 
+              -5px -5px 10px rgba(0, 0, 0, 0.628);
+  overflow: auto;
+}
+
+#projectContainer > div{
+  display: inline-block;
+  height: 52vw;
+  margin: 2vw;
   background-color: #2D2B2B;
+  border-radius: 5vw;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.494);
+}
+
+#projectContainer div p{
+  font-size: 3vw;
+  padding: 3vw;
+  font-weight: 600;
+  color: #B8B8B8;
+  pointer-events: none;
+}
+
+#projectContainer div div{
+  width: 40vw; 
+  height: 30vw;
+  margin: 2vw;
+  border: 0.5vw solid black;
+  border-radius: 2vw;
+  overflow: hidden;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.504);
+}
+
+#projectContainer div div img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#projectContainer div button{
+  margin-top: 1vw;
+  font-size: 3vw;
+  width: 35vw;
+  border-radius: 10vw;
+  background-color: #B8B8B8;
+  transition: 0.2s;
+}
+
+
+#projectContainer div button:hover{
+  background-color: #7c7b7b;
+  color: #B8B8B8;
+}
+
+/* CONTACT STYLING */
+
+#footerContainer{
+  height: 48vw;
+  background-color: #2D2B2B;
+}
+
+#footerContainer h1, h3{
+  color: #B8B8B8;
+}
+
+#footerContainer > h3{
+  display: inline-block;
+  font-size: 1vw;
+  margin-top: 4vw;
+}
+
+#footerContainer > h1{
+  font-size: 4vw;
+  margin-bottom: 3vw;
+}
+
+.contactContainer{
+  width: 100vw;
+}
+
+.contactContainer > div{
+  display: flex;
+  gap: 2vw;
+  width: 80vw;
+  justify-content: left;
+  margin-top: 2vw;
+  align-items: center;
+  margin: auto;
+  padding-top: 1.5vw;
+}
+
+.contactLogo div{
+  display: inline-block;
+  width: 3.5vw;
+  height: 3.5vw;
+}
+
+.contactLogo img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.contactLogo p{
+  font-size: 2.5vw;
+}
+
+.contactLogo a{
+  text-decoration: none;
+  color: #B8B8B8;
+  transition: 0.5s;
+}
+
+.num{
+  color: #B8B8B8;
+  pointer-events: none;
+}
+
+.contactLogo a:hover{
+  text-decoration: underline;
+  color: #1900ff62;
 }
